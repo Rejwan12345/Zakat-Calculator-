@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LactureActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="যাকাত সম্পর্কিত লেকচার ভিডিও"
+            app:titleTextColor="#ffffff"
+            android:background="#0099FF"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            style="@style/CustomToolbarStyle"
+
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_1"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#C842A5F5"
+
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+
+                app:lottie_rawRes="@raw/internet" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:smoothScrollbar="true"
+                android:scrollbars="none"
+                android:dividerHeight="10.0sp"
+                android:divider="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                />
+
+
+
+         </RelativeLayout>
+
+
+      </RelativeLayout>
+
+
+
+
+</LinearLayout>
