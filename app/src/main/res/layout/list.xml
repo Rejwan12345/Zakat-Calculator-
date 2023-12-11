@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/materialCardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="8dp"
-    android:backgroundTint="#ffffff"
-    android:id="@+id/materialCardView"
-    android:layout_marginRight="70dp"
     android:layout_marginLeft="70dp"
+    android:layout_marginRight="70dp"
+    android:backgroundTint="#ffffff"
+    app:cardCornerRadius="8dp"
 
     >
 
@@ -15,12 +15,12 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:text="item"
         android:gravity="center"
-        android:textStyle="bold"
         android:padding="15dp"
+        android:text="item"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
 
         />
 

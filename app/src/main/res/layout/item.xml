@@ -1,54 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
-
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/materialCardView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clickable="false"
-    android:focusable="false"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:backgroundTint="@color/white"
-    >
+    android:clickable="false"
+    android:focusable="false">
 
 
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
-       <ImageView
-           android:id="@+id/imageView"
-           android:layout_width="match_parent"
-           android:layout_height="35dp"
-           android:layout_alignParentTop="true"
-           android:layout_marginTop="22dp"
-           android:src="@drawable/budget"
-           android:scaleType="center"
-           />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:scaleType="center"
+            android:src="@drawable/budget" />
 
 
-       <TextView
-           android:id="@+id/textView"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:layout_below="@+id/imageView"
-           android:layout_marginTop="4dp"
-           android:gravity="center"
-           android:paddingBottom="10dp"
-           android:text="hend"
-           android:textColor="#000000"
-           android:textSize="15sp"
-           android:textStyle="bold"
-           android:layout_marginLeft="8dp"
-           android:layout_marginRight="8dp"
-           />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="hend"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
 
-   </RelativeLayout>
-
-
-
-
+    </RelativeLayout>
 
 
 </com.google.android.material.card.MaterialCardView>

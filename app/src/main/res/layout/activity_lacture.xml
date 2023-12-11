@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LactureActivity"
-    android:orientation="vertical"
     android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".LactureActivity"
 
     >
 
@@ -18,19 +18,17 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/materialToolbar"
+            style="@style/CustomToolbarStyle"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="যাকাত সম্পর্কিত লেকচার ভিডিও"
-            app:titleTextColor="#ffffff"
             android:background="#0099FF"
             app:navigationIcon="@drawable/baseline_arrow_back_24"
-            style="@style/CustomToolbarStyle"
+            app:title="যাকাত সম্পর্কিত লেকচার ভিডিও"
+            app:titleTextColor="#ffffff"
 
             />
 
     </com.google.android.material.appbar.AppBarLayout>
-
-
 
 
     <RelativeLayout
@@ -44,8 +42,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:background="#C842A5F5"
+            android:orientation="vertical"
 
             >
 
@@ -64,25 +62,23 @@
                 android:id="@+id/listView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="10dp"
-                android:smoothScrollbar="true"
-                android:scrollbars="none"
-                android:dividerHeight="10.0sp"
-                android:divider="@android:color/transparent"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                />
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10.0sp"
+                android:padding="10dp"
+                android:scrollbars="none"
+                android:smoothScrollbar="true" />
 
 
-
-         </RelativeLayout>
-
-
-      </RelativeLayout>
+        </RelativeLayout>
 
 
+    </RelativeLayout>
 
 
 </LinearLayout>

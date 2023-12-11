@@ -1,27 +1,16 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.view.View;
-import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.airbnb.lottie.LottieAnimationView;
-import com.google.android.material.appbar.MaterialToolbar;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Tube_play extends AppCompatActivity {
 
 
-
-    WebView webView;
-    LottieAnimationView load;
-
     public static String URL = "";
-
-
-
+    WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +19,6 @@ public class Tube_play extends AppCompatActivity {
 
 
         webView = findViewById(R.id.webView);
-        load = findViewById(R.id.load);
-
 
 
         webView.setWebViewClient(new HelloWebViewClient());
@@ -41,16 +28,16 @@ public class Tube_play extends AppCompatActivity {
 
     }
 
-    private class HelloWebViewClient extends WebViewClient {
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+
+    private static class HelloWebViewClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             view.loadUrl(URL);
             return true;
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        finish();
     }
 }
