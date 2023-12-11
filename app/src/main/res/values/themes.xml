@@ -25,7 +25,6 @@
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication">
 
 
-
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_200</item>
         <item name="colorOnPrimary">@color/black</item>
@@ -43,11 +42,6 @@
     <style name="CustomToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
         <item name="android:textSize">5sp</item> <!-- Adjust the text size as needed -->
     </style>
-
-
-
-
-
 
 
 </resources>

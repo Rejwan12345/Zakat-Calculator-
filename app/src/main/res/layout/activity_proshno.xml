@@ -4,27 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProshnoActivity"
     android:orientation="vertical"
-
-
-  >
+    tools:context=".ProshnoActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        >
+        android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/materialToolbar"
+            style="@style/CustomToolbarStyle"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="যাকাত সম্পর্কিত কিছু জিজ্ঞাসা"
-            app:titleTextColor="#ffffff"
             android:background="#0099FF"
             app:navigationIcon="@drawable/baseline_arrow_back_24"
-            style="@style/CustomToolbarStyle"
+            app:title="যাকাত সম্পর্কিত কিছু জিজ্ঞাসা"
+            app:titleTextColor="#ffffff"
 
             />
 
@@ -42,8 +37,8 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:background="#C842A5F5"
+            android:orientation="vertical"
             android:padding="20dp"
 
             >
@@ -52,21 +47,20 @@
                 android:id="@+id/listView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:listSelector="@android:color/transparent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="10.0sp"
+                android:listSelector="@android:color/transparent"
                 android:scrollbars="none"
-                android:layout_marginRight="30dp"
-                android:layout_marginLeft="30dp"
 
 
                 />
 
-         </LinearLayout>
+        </LinearLayout>
 
 
     </RelativeLayout>
-
 
 
 </LinearLayout>
